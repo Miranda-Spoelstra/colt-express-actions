@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Living Colt Express</title>
+
+  <!--  Styles  -->
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <nav class="flexbar">
+        <header>Living Colt Express</header>
+    </nav>
+
+    <main>
+        <section id="actionSelect">
+            <form action="">
+
+                <label for="color">Kleur:</label>
+                <label><input type="radio" name="color" value="black" checked>
+                    <div class='colorCircle black'></div>
+                </input></label>
+                <label><input type="radio" name="color" value="white">
+                    <div class='colorCircle white'></div>
+                </input></label>
+                <label><input type="radio" name="color" value="red">
+                    <div class='colorCircle red'></div>
+                </input></label>
+                <label><input type="radio" name="color" value="purple">
+                    <div class='colorCircle purple'></div>
+                </input></label>
+                <label><input type="radio" name="color" value="blue">
+                    <div class='colorCircle blue'></div>
+                </input></label>
+                <label><input type="radio" name="color" value="green">
+                    <div class='colorCircle green'></div>
+                </input></label>
+
+                <label for="action">Actie:</label>
+                <select id="action" name="action">
+                    <option value="Horizontaal">Horizontaal</option>
+                    <option value="Verticaal">Verticaal</option>
+                    <option value="Sjerffol">Sjerffol</option>
+                    <option value="Schieten">Schieten</option>
+                    <option value="Stelen">Stelen</option>
+                    <option value="Slaan">Slaan</option>
+                </select>
+
+                <input type="button" name="add" value="Add" onclick="addAction();">
+                <input type="button" name="reset" value="Reset" onclick="resetActions();">
+
+            </form>
+        </section>
+
+        <section id="actionDisplay">
+            <div class="actionCol" id="actionCol1"></div>
+            <div class="actionCol" id="actionCol2"></div>
+            <div class="actionCol" id="actionCol3"></div>
+        </section>
+    </main>
+
+    <footer class="flexbar">
+        <p>Made by Miranda Spoelstra</p>
+        <p>Last updated: September 2019</p>
+    </footer>
+
+  <!-- Scripts -->
+  <script src="scripts/script.js" type="text/javascript"></script>
+</body>
+</html>

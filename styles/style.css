@@ -1,0 +1,147 @@
+/* Variables */
+
+* {
+    --main-white: #ededed;
+    --main-black: #111;
+    --main-color: lightseagreen;
+}
+
+/* General styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: var(--main-white);
+    color: var(--main-black);
+}
+
+.flexbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+
+/* Navigation bar */
+
+nav {
+    position: fixed;
+    height: 5vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: var(--main-color);
+    font-size: 18px;
+}
+
+nav header {
+    padding: 10px 0;
+}
+
+/*  Main content */
+
+main {
+    margin: 6vh auto 20px auto;
+    width: 80%;
+    min-height: 87vh;
+    font-size: 28px;
+}
+
+.colorCircle {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    float: left;
+}
+
+form label {
+    line-height: 30px;
+    display: inline-block;
+}
+
+input[type="radio"] {
+    margin-top: 20px;
+    vertical-align: top;
+}
+input[type="radio"]:checked + .colorCircle {
+    box-shadow: inset 3px 3px 4px var(--main-black);
+}
+
+input[type="button"] {
+    font-size: 28px;
+    line-height: 30px;
+}
+
+.actionName {
+    line-height: 60px;
+    margin-left: 75px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#actionSelect .colorCircle {
+    width: 30px;
+    height: 30px;
+    float: none;
+    display: inline-block;
+    margin-top: 10px;
+    vertical-align: bottom;
+}
+
+/* Colors for the different circles */
+.blue {
+    background: #559CFF;
+}
+.red {
+    background: #FF5F4E;
+}
+.green {
+    background: #2F8945;
+}
+.purple {
+    /* background: #A45CC2; */
+    background: #FF95E4;
+}
+.white {
+    background: #fff;
+    border: 1px solid #bbb;
+}
+.black {
+    background: #444;
+    /* background: #8F6141; */
+}
+
+select {
+    font-size: 20px;
+    padding: 5px;
+}
+
+#actionDisplay {
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+    margin-top: 10px;
+}
+
+.actionCol {
+    width: 32%;
+    float: left;
+}
+
+#actionCol2 {
+    margin: 0 2%;
+}
+
+/* Footer */
+
+footer {
+    background: #333;
+    color: var(--main-white);
+    height: 5vh;
+}
+footer p {
+    padding: 10px 0;
+}
